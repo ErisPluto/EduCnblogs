@@ -1,5 +1,5 @@
 <div>
-<h1 align = "center">Beta阶段发布说明</h1>
+<h1 align = "center">班级博客客户端Beta阶段发布说明</h1>
 <h6 align = "right"><i>NewTeam 2017/12/18</i></h6>
 <hr>
 <div>
@@ -25,7 +25,6 @@
 <p>博客园-班级博客移动客户端目前发布于酷安网移动应用平台，下载地址如下：</p>
 <a href = "https://www.coolapk.com/apk/167396">博客园-班级博客移动客户端（android）</a>
 </div>
-
 <div id = "a">
 <h3>功能</h3><a href = "#dire">返回</a>
 <h4>本地存储</h4>
@@ -35,28 +34,29 @@
 <h4>个人博客</h4>
 <ul>
   <li>长按评论添加回复，自动添加@ username<br>
-  <img style = "width:300px ; border:solid black 1" src = "">
+  <img style = "width:300px ; border:solid black 1" src = "http://images2017.cnblogs.com/blog/1254203/201712/1254203-20171218170418896-618786173.png"><br>
+  <img style = "width:300px ; border:solid black 1" src = "http://images2017.cnblogs.com/blog/1254203/201712/1254203-20171218170442006-757129552.png">
   </li>
   <li>在评论中输入@，弹出该博文中已评论用户的用户名，长按或双击可添加用户名<br>
-  <img style = "width:300px ; border:solid black 1" src = "">
+  <img style = "width:300px ; border:solid black 1" src = "http://images2017.cnblogs.com/blog/1254203/201712/1254203-20171218170458787-1646005876.png">
   </li>
 </ul>
 <h4>班级博客-作业</h4>
 <ul>
   <li>使用react native组件显示作业详情<br>
-  <img style = "width:300px ; border:solid black 1" src = "">
+  <img style = "width:300px ; border:solid black 1" src = "http://images2017.cnblogs.com/blog/1254203/201712/1254203-20171218170513693-1007206888.png">
   </li>
   <li>显示已提交列表<br>
-  <img style = "width:300px ; border:solid black 1" src = "">
+  <img style = "width:300px ; border:solid black 1" src = "http://images2017.cnblogs.com/blog/1254203/201712/1254203-20171218170535350-1009202252.png">
   </li>
 </ul>
 <h4>日程提醒</h4>
 <ul>
   <li>在日程提醒页面的日历中标记处有作业截止的日期<br>
-  <img style = "width:300px ; border:solid black 1" src = "">
+  <img style = "width:300px ; border:solid black 1" src = "http://images2017.cnblogs.com/blog/1254203/201712/1254203-20171218170557428-1056058306.png">
   </li>
   <li>点击该日期可显示当日截止的作业，并跳转到的作业页面<br>
-  <img style = "width:300px ; border:solid black 1" src = "">
+  <img style = "width:300px ; border:solid black 1" src = "http://images2017.cnblogs.com/blog/1254203/201712/1254203-20171218170617193-2107164959.png">
   </li>
 </ul>
 </div>
@@ -87,7 +87,7 @@
 <div id = "c">
 <h3>对运行环境的要求</h3> <a href = "#dire">返回</a>
 <ul>
-  <li>目前仅支持android系统</li>
+  <li>目前仅支持android 4.1以上系统</li>
   <li>为保证使用效果，请保持网络连接</li>
 </ul>
 </div>
@@ -100,19 +100,14 @@
 <div id = "e">
 <h3>已知的问题和限制</h3><a href = "#dire">返回</a>
 <ul>
-  <!--li>作业发布
-    <ul>
-      <li>作业发布标题、内容可以为空</li>
-      <li>作业的开始时间可以晚于截止时间</li>
-    </ul>
-  </li-->
+    <!--li>暂未发现</li-->
 </ul>
 </div>
 
 <div id = "g">
 <h3>意见反馈</h3><a href = "#dire">返回</a>
 <ul><li>登录App -> 我 -> 关于App</li>
-<li><img style = "width:300px ; border:solid black 1" src = "">
+<li><img style = "width:300px ; border:solid black 1" src = "http://images2017.cnblogs.com/blog/1254203/201712/1254203-20171218170801803-1268373057.png">
 <ul>
   <li>点击意见反馈，可以填写问卷，所有题目均为选答，可以反馈bug，或对界面和功能提出改进建议</li>
   <li>点击项目地址，访问项目</li>

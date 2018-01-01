@@ -27,7 +27,7 @@
   </thead>
   <tbody>
     <tr>
-      <td>部分班级打开作业列表时App崩溃</td>
+      <td><a href = "https://github.com/NewTeam5/EduCnblogs/pull/118">部分班级打开作业列表时App崩溃</a></td>
       <td><code>
           [{
             deadline: null
@@ -40,7 +40,7 @@
       <td>A</td>
     </tr>
     <tr>
-      <td>横屏页面显示不全</td>
+      <td><a href = "https://github.com/NewTeam5/EduCnblogs/pull/161">横屏页面显示不全</a></td>
       <td>\</td>
       <td>对style中的width进行设置</td>
       <td></td>
@@ -48,7 +48,7 @@
       <td>B</td>
     </tr>
     <tr>
-      <td>作业详情页面中文乱码</td>
+      <td><a href = "https://github.com/NewTeam5/EduCnblogs/pull/194">作业详情页面中文乱码</a></td>
       <td>通过URL获取到的页面中有中文</td>
       <td>在WebView组件中设置baseUrl</td>
       <td>HomeworkDetail.js</td>
@@ -56,7 +56,7 @@
       <td>B</td>
     </tr>
     <tr>
-      <td>日程提醒页面闪烁</td>
+      <td><a href = "https://github.com/NewTeam5/EduCnblogs/pull/178">日程提醒页面闪烁</a></td>
       <td>存在两个及以上班级</td>
       <td><p>获取作业时没获取一个班级的作业就会重置一次state，后一个班级会覆盖前一个班级的作业</p><p>将作业累加的存进数组中，一次性赋值</p></td>
       <td>ScheduleReminding.js</td>
@@ -64,7 +64,7 @@
       <td>A</td>
     </tr>
     <tr>
-      <td>输入评论时输入框上移</td>
+      <td><a href = "https://github.com/NewTeam5/EduCnblogs/pull/180">输入评论时输入框上移</a></td>
       <td>\</td>
       <td>重新设置TextInput组件的属性</td>
       <td>CommentAdd.js</td>
@@ -72,7 +72,7 @@
       <td>B</td>
     </tr>
     <tr>
-      <td>日程提醒页面每次显示内容不同</td>
+      <td><a href = "https://github.com/NewTeam5/EduCnblogs/pull/187">日程提醒页面每次显示内容不同</a></td>
       <td>存在两个及以上班级</td>
       <td>没有处理好网络请求和赋值的操作</td>
       <td>ScheduleReminding.js</td>
@@ -80,9 +80,17 @@
       <td>A</td>
     </tr>
     <tr>
-      <td>日程提醒页面跳转到消息页面不显示内容</td>
+      <td><a href "https://github.com/NewTeam5/EduCnblogs/pull/187">日程提醒页面跳转到消息页面不显示内容</a></td>
       <td>\</td>
       <td>修改了数组的名称，但是没有修改传到下一个页面的变量的名称，因此实际上传到下一个页面的变量为空。修改名称后问题解决</td>
+      <td>ScheduleReminding.js</td>
+      <td>Solved</td>
+      <td>A</td>
+    </tr>
+    <tr>
+      <td><a href = "https://github.com/NewTeam5/EduCnblogs/pull/194">部分用户点击有日期提醒的日期app崩溃</a></td>
+      <td>{deadline: null}</td>
+      <td><p>通过网络请求获取的数据中有null，使用过程中没有对其进行检查直接使用了字符串函数。</p><p>检查后使用，若为null将其赋值为“undefined”<p></td>
       <td>ScheduleReminding.js</td>
       <td>Solved</td>
       <td>A</td>
@@ -175,7 +183,7 @@
 </div>
 
 <div>
-<h4>典型用户：Assiant_Liu</h4>
+<h4>典型用户：Assisant_Liu</h4>
 <h5>背景</h5>
 <ul>
   <li>用户需求：
@@ -225,11 +233,46 @@
   </li>
 </ul>
 </div>
-
 </div>
+
+<div style = "padding:10px">
+<h2>测试矩阵</h2>
+<table style = "width:100%">
+  <thead>
+    <tr><th colspan = "2">测试矩阵</th><th colspan = "10">后端功能测试</th><th colspan = "4">前端功能测试</th>
+  </thead>
+  <tbody>
+    <tr><td>测试机型</td><td>测试环境（机型，版本，分辨率</td><td>登录功能</td><td>查看博客</td><td>添加评论</td><td>查看班级</td><td>查看作业</td><td>添加成员</td><td>发布作业</td><td>退出登录</td><td>网络断开</td><td>点击事件</td><td>页面布局</td><td>加载速度</td><td>图片问题</td><td>页面切换</td></tr>
+    <tr><td>三星C7</td><td>6.0.0</td><td>正常</td><td>正常</td><td>正常</td><td>正常</td><td>正常</td><td>正常</td><td>正常</td><td>正常</td><td>正常</td><td>正常</td><td>较好</td><td>一般</td><td>正常显示链接图片显示较大</td><td>正常</td></tr>
+    <tr><td>华为P9</td><td>7.0.0</td><td>正常</td><td>正常</td><td>正常</td><td>正常</td><td>正常</td><td>正常</td><td>正常</td><td>正常</td><td>正常</td><td>正常</td><td>较好</td><td>较好</td><td>正常显示链接图片显示较大</td><td>正常</td><tr>
+    <tr><td>三星S8</td><td>6.1.0</td><td>正常</td><td>正常</td><td>正常</td><td>正常</td><td>正常</td><td>正常</td><td>正常</td><td>正常</td><td>正常</td><td>正常</td><td>一般</td><td>一般</td><td>正常显示链接图片显示较大</td><td>正常</td></tr>
+    <tr><td>Custom Phone6.0</td><td>6.0.1</td><td>正常</td><td>正常</td><td>正常</td><td>正常</td><td>正常</td><td>正常</td><td>正常</td><td>正常</td><td>正常</td><td>正常</td><td>较好</td><td>一般</td><td>正常显示链接图片显示较大</td><td>正常</td></tr>
+    <tr><td>Google Nexus</td><td>5.1.0</td><td>正常</td><td>正常</td><td>正常</td><td>正常</td><td>正常</td><td>正常</td><td>正常</td><td>正常</td><td>正常</td><td>正常</td><td>较好</td><td>一般</td><td>正常显示链接图片显示较大</td><td>正常</td></tr>
+  </tbody>
+</table>
+</div>
+
+<div style = "padding:10px">
+<h2>兼容性</h2>
+<p>要在大多数的主流手机上可以安装运行，针对这一点我们进行了测试，将apk文件交到腾讯的WeTest平台，对主流的50款手机进行了兼容性测试。在腾讯的适配标准下，50款手机的适配通过率达到了100%。</p>
+<p>这是兼容性报告截图</p>
+<img src = "http://images2017.cnblogs.com/blog/1220932/201711/1220932-20171112161917731-161718779.png">
+<p>其中一个机型的性能分析</p>
+<img src = "http://images2017.cnblogs.com/blog/1220932/201711/1220932-20171112165650231-647446095.png">
+<p>兼容性测试50台设备分布</p>
+<img src = "http://images2017.cnblogs.com/blog/1220932/201711/1220932-20171112161937559-156707959.png">
+<img src = "http://images2017.cnblogs.com/blog/1220932/201711/1220932-20171112161949169-240729043.png">
+<img src = "http://images2017.cnblogs.com/blog/1220932/201711/1220932-20171112161957747-2018143257.png">
+<img src = "http://images2017.cnblogs.com/blog/1220932/201711/1220932-20171112162006247-961574638.png">
+<img src = "http://images2017.cnblogs.com/blog/1220932/201711/1220932-20171112162016372-250593921.png">
+</div>
+
 <div style = "padding:10px">
 <h2>单元测试</h2>
 </div>
-<img src = "https://images2018.cnblogs.com/blog/1254203/201712/1254203-20171226014500290-1612920242.png"></img>
-<img src = "https://images2018.cnblogs.com/blog/1254203/201712/1254203-20171226014529525-1964582565.png"></img>
+<p>测试用例</p>
+<img src = "https://images2018.cnblogs.com/blog/1254203/201712/1254203-20171226014500290-1612920242.png"><br>
+<p>覆盖率</p>
+<img src = "https://images2018.cnblogs.com/blog/1254203/201712/1254203-20171226014529525-1964582565.png">
+</div>
 </div>
